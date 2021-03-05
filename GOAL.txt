@@ -1,0 +1,9 @@
+A working editor:
+    - Size ≤ 4 KB (4096 B)
+    - Maybe even ≤ 2 KB (2048 B)
+Goals:
+    - Save and exit
+    - Undo/redo
+    - Delete key
+    - Fix right key at EOF
+    - Support for TAB
