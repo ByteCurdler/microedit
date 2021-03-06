@@ -60,7 +60,7 @@ def main(stdscr):
                 file.seek(0)
                 file.write("\n".join(content))
                 return
-            elif ord(k)>31:
+            elif k > "\x1f":
                 tmp=content[pos[1]]
                 content[pos[1]] = tmp[:pos[0]] + k + tmp[pos[0]:]
                 pos[0] += 1

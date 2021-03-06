@@ -20,7 +20,7 @@ def m(S):
 			p[1]=min(len(c)-1,p[1]+1)
 			p[0]=min(len(c[p[1]]),p[0])
 		elif k in(260,261):
-			p[0]+=(1 if k%2 else -1)
+			p[0]+=(1 if k%2 else-1)
 			if p[0]<0:p=[len(c[p[1]-1]),max(0,p[1]-1)]
 			if p[0]>len(c[p[1]]):p=[0,min(len(c)-1,p[1]+1)]
 		elif k==263:
@@ -43,7 +43,7 @@ def m(S):
 				f.seek(0)
 				f.write("\n".join(c))
 				break
-                        elif ord(k)>31
+			elif k>"\x1f":
 				t=c[p[1]]
 				c[p[1]]=t[:p[0]]+k+t[p[0]:]
 				p[0]+=1
